@@ -1,3 +1,5 @@
+package Pizza;
+
 public class PizzaOrder {
     private String name;
     private Size size;
@@ -5,9 +7,6 @@ public class PizzaOrder {
     private String address;
     private boolean orderAccepted;
 
-    public enum Size {
-        SMALL, MEDIUM, BIG
-    }
 
     public PizzaOrder(String name, Size size, boolean needSauce, String address) {
         this.setName(name);
@@ -72,16 +71,5 @@ public class PizzaOrder {
                 this.size, this.needSauce ? "Yes" : "No", this.address, this.orderAccepted ? "Yes" : "No");
     }
 
-    static class Main{
-        public static void main(String[] args) {
-            PizzaOrder testOrder = new PizzaOrder("Pizza BBQ", Size.BIG, true, "Gagarina 80A");
 
-            testOrder.cancel();
-            testOrder.order();
-            testOrder.order();
-            testOrder.cancel();
-
-            System.out.println(testOrder);
-        }
-    }
 }

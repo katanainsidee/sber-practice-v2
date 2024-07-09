@@ -64,28 +64,4 @@ public class Matrix {
         System.out.println();
     }
 
-    public static void main(String[] args) {
-        Matrix m1 = new Matrix(2, 2);
-        m1.setValue(0, 0, 1);
-        m1.setValue(0, 1, 2);
-        m1.setValue(1, 0, 3);
-        m1.setValue(1, 1, 4);
-        m1.printMatrix();
-
-        Matrix m2 = new Matrix(2, 2);
-        m2.setValue(0, 0, 5);
-        m2.setValue(0, 1, 6);
-        m2.setValue(1, 0, 7);
-        m2.setValue(1, 1, 8);
-        m2.printMatrix();
-
-        Matrix m3 = m1.add(m2);
-        m3.printMatrix();
-
-        Matrix m4 = m1.multiplyByNumber(3);
-        m4.printMatrix();
-
-        Matrix m5 = m1.multiply(m2);
-        m5.printMatrix();
-    }
 }

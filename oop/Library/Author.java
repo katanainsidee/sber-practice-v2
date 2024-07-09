@@ -1,7 +1,9 @@
+package Library;
+
 public class Author {
-    String name;
-    String gender;
-    String email;
+    private String name;
+    private String gender;
+    private String email;
 
     public Author(String name, String gender, String email) throws Exception {
         this.setName(name);

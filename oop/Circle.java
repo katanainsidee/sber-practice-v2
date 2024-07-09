@@ -1,6 +1,6 @@
 public class Circle {
-    float radius;
-    String color;
+    private float radius;
+    private String color;
 
     public double area() {
         return Math.round(Math.PI * Math.pow(this.radius, 2) * 100) / 100.0;
@@ -21,12 +21,4 @@ public class Circle {
         return null;
     }
 
-    static class Main {
-        public static void main(String[] args) {
-            Circle circle = new Circle(10, "red");
-            System.out.println(circle.area());
-            System.out.println(circle.perimeter());
-            circle.toString();
-        }
-    }
 }

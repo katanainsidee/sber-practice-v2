@@ -1,9 +1,9 @@
 import java.util.Arrays;
 
 public class Phone {
-    String number;
-    String model;
-    String weight;
+    private String number;
+    private String model;
+    private String weight;
 
     public void receiveCall(String name) {
         System.out.printf("Звонит %s\n", name);
@@ -44,22 +44,5 @@ public class Phone {
         System.out.printf("%s, %s, %s\n", number, model, weight);
 
         return null;
-    }
-
-    static class Main {
-        static public void main(String[] args) {
-            Phone iphone = new Phone("+7 (911) 060-71-16", "IPhone 13", "173g");
-            Phone samsung = new Phone("+7 (921) 877-13-12", "Samsung");
-            Phone nophone = new Phone();
-
-            iphone.receiveCall("Misha");
-            samsung.receiveCall("Denis", "+7 (624) 460-73-78");
-
-            System.out.println(iphone.getNumber());
-
-            iphone.sendMassage();
-
-            iphone.toString();
-        }
     }
 }
