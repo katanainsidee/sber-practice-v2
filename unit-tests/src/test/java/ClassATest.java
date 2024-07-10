@@ -1,5 +1,8 @@
 import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
+
+import SomeClasses.ClassA;
+import SomeClasses.ClassB;
 import org.junit.Test;
 
 import java.lang.reflect.Method;

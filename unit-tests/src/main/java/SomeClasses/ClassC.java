@@ -1,3 +1,5 @@
+package SomeClasses;
+
 public class ClassC {
     public String avgMethodC() {
         return "C";

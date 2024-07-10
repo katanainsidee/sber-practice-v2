@@ -1,4 +1,6 @@
 import static org.junit.Assert.*;
+
+import SomeClasses.ClassC;
 import org.junit.Test;
 
 public class ClassCTest {

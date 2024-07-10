@@ -1,5 +1,8 @@
 import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
+
+import SomeClasses.ClassB;
+import SomeClasses.ClassC;
 import org.junit.Test;
 
 public class ClassBTest {

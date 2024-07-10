@@ -1,3 +1,5 @@
+package SomeClasses;
+
 public class ClassA {
     private ClassB classB;
 
