@@ -46,3 +46,4 @@ reflection/src/main/resources/archetype-resources/src/main/java/App.java
 reflection/src/main/resources/archetype-resources/src/test/java/AppTest.java
 streams/src/main/resources/archetype-resources/src/test/java/AppTest.java
 streams/src/main/resources/archetype-resources/src/main/java/App.java
+reflection/src/main/java/InstanceCreator.java
