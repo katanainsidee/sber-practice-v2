@@ -36,3 +36,5 @@ streams/pom.xml
 streams/src/main/resources/archetype-resources/src/main/java/App.java
 streams/src/main/resources/archetype-resources/pom.xml
 streams/src/main/resources/archetype-resources/src/test/java/AppTest.java
+streams/src/main/resources/archetype-resources/src/test/java/AppTest.java
+streams/src/main/resources/archetype-resources/src/main/java/App.java
