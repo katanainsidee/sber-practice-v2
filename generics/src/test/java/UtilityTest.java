@@ -26,4 +26,15 @@ public class UtilityTest {
         int count = Utility.countEvenNumbers(mixedList);
         assertEquals(3, count);
     }
+
+    @Test
+    public void testSwapElements() {
+        List<String> stringList = Arrays.asList("one", "two", "three", "four");
+        Utility.swapElements(stringList, 1, 3);
+        assertEquals(Arrays.asList("one", "four", "three", "two"), stringList);
+
+        List<Integer> intList = Arrays.asList(1, 2, 3, 4);
+        Utility.swapElements(intList, 0, 2);
+        assertEquals(Arrays.asList(3, 2, 1, 4), intList);
+    }
 }
