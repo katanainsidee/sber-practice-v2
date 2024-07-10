@@ -27,3 +27,7 @@ replay_pid*
 *.xml
 annotations/src/main/resources/archetype-resources/src/main/java/App.java
 annotations/src/main/resources/archetype-resources/src/test/java/AppTest.java
+streams/src/main/resources/archetype-resources/src/main/java/App.java
+streams/src/main/resources/archetype-resources/src/test/java/AppTest.java
+streams/target/classes/archetype-resources/src/main/java/App.java
+streams/target/classes/archetype-resources/src/test/java/AppTest.java
