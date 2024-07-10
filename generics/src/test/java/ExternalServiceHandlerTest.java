@@ -1,6 +1,7 @@
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+import UtilityPackage.*;
 import org.junit.Test;
 
 public class ExternalServiceHandlerTest {

@@ -1,3 +1,5 @@
+package UtilityPackage;
+
 public abstract class ExternalServiceHandler<Request, Response> {
 
     public final Response handleRequest(Request request) {

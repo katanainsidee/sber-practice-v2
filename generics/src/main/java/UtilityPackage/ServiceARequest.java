@@ -1,4 +1,6 @@
-public class ServiceAResponse {
+package UtilityPackage;
+
+public class ServiceARequest {
     public boolean isValid() {
         return true;
     }

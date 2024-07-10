@@ -1,3 +1,5 @@
+package UtilityPackage;
+
 public class ServiceBHandler extends ExternalServiceHandler<ServiceBRequest, ServiceBResponse> {
 
     @Override

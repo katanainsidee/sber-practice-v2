@@ -3,6 +3,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
 import java.util.List;
 
+import UtilityPackage.Utility;
 import org.junit.Test;
 
 public class UtilityTest {
