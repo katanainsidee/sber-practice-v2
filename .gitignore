@@ -42,3 +42,7 @@ annotations/target/classes/archetype-resources/src/main/java/App.java
 annotations/target/classes/archetype-resources/src/test/java/AppTest.java
 annotations/target/classes/META-INF/maven/archetype.xml
 streams/pom.xml
+reflection/src/main/resources/archetype-resources/src/main/java/App.java
+reflection/src/main/resources/archetype-resources/src/test/java/AppTest.java
+streams/src/main/resources/archetype-resources/src/test/java/AppTest.java
+streams/src/main/resources/archetype-resources/src/main/java/App.java
