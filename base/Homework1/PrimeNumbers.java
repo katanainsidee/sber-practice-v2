@@ -1,3 +1,5 @@
+package Homework1;
+
 public class PrimeNumbers {
     static boolean isPrime(int n) {
         for (int i = 2; i < n; i++) {
@@ -8,7 +10,7 @@ public class PrimeNumbers {
         return true;
     }
 
-    public static void main(String[] args) {
+    public static void printPrimeNumbers() {
         for (int i = 2; i < 100; i++) {
             if (isPrime(i)) {
                 System.out.println(i);

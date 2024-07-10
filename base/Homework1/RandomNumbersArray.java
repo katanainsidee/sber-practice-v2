@@ -1,3 +1,5 @@
+package Homework1;
+
 public class RandomNumbersArray {
 
     public static float getAvg(int[] arr) {
@@ -18,11 +20,11 @@ public class RandomNumbersArray {
         return max;
     }
 
-    public static void main(String[] args) {
+    public static void printMaxAndAvgNumbers() {
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 100);
         }
-        System.out.printf("Максимальное число в массиве: %s\nСреднее арифмитическое чисел в массиве: %s", findMax(array), getAvg(array));
+        System.out.printf("Максимальное число в массиве: %s\nСреднее арифмитическое чисел в массиве: %s\n", findMax(array), getAvg(array));
     }
 }

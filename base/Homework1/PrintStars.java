@@ -1,8 +1,10 @@
+package Homework1;
+
 import java.util.Arrays;
 
 public class PrintStars {
 
-    public static void main(String[] args) {
+    public static void printStars() {
         int height = 3;
         int length = 5;
         String[] heightArray = new String[height];
