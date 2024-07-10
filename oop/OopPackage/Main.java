@@ -1,11 +1,8 @@
-import Library.Author;
-import Library.Book;
-import Pizza.PizzaOrder;
-import Pizza.Size;
+package OopPackage;
 
 public class Main {
     private static void runPhone(){
-        System.out.println("Тестирование Phone:");
+        System.out.println("Тестирование OopPackage.Phone:");
         Phone iphone = new Phone("+7 (911) 060-71-16", "IPhone 13", "173g");
         Phone samsung = new Phone("+7 (921) 877-13-12", "Samsung");
         Phone nophone = new Phone();
@@ -25,7 +22,7 @@ public class Main {
     }
 
     private static void runMatrix(){
-        System.out.println("Тестирование Matrix:");
+        System.out.println("Тестирование OopPackage.Matrix:");
         Matrix m1 = new Matrix(2, 2);
         m1.setValue(0, 0, 1);
         m1.setValue(0, 1, 2);
@@ -64,7 +61,7 @@ public class Main {
     }
 
     private static void runPizzaOrder(){
-        System.out.println("Тестирование Pizza.PizzaOrder:");
+        System.out.println("Тестирование PizzaOrder:");
 
         PizzaOrder testOrder = new PizzaOrder("Pizza BBQ", Size.BIG, true, "Gagarina 80A");
 

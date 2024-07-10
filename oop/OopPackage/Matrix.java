@@ -1,3 +1,5 @@
+package OopPackage;
+
 public class Matrix {
     private double[][] matrix;
     private int rows;
