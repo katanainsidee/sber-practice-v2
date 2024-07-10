@@ -24,3 +24,10 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+*.xml
+*.xml
+*.xml
+exceptions/pom.xml
+exceptions/src/main/resources/archetype-resources/pom.xml
+exceptions/src/main/resources/META-INF/maven/archetype.xml
+exceptions/target/classes/archetype-resources/pom.xml
