@@ -3,33 +3,29 @@ import static org.junit.Assert.*;
 
 import SomeClasses.ClassA;
 import SomeClasses.ClassB;
+import SomeClasses.ClassC;
 import org.junit.Test;
 
 import java.lang.reflect.Method;
 
 public class ClassATest {
-    @Test
-    public void testMethodAWithException() {
-        ClassB mockClassB = mock(ClassB.class);
 
-        try {
-            when(mockClassB.methodB()).thenThrow(new Exception("Exception in methodB"));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    @Test
+    public void testMethodAWithException() throws Exception {
+        ClassC mockClassC = mock(ClassC.class);
+
+        ClassB mockClassB = new ClassB(mockClassC);
+
+        when(mockClassC.methodC()).thenThrow(new Exception("Exception in methodC"));
 
         ClassA classA = new ClassA(mockClassB);
 
         String result = classA.methodA();
-
         assertEquals("Exception caught in methodA", result);
 
-        try {
-            verify(mockClassB, times(1)).methodB();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        verify(mockClassC, times(1)).methodC();
     }
+
     @Test
     public void testPrivateMethodA() throws Exception {
         ClassB mockClassB = mock(ClassB.class);

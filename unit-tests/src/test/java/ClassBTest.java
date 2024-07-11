@@ -1,34 +1,27 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
-import static org.junit.Assert.*;
 
+import org.junit.jupiter.api.Test;
 import SomeClasses.ClassB;
 import SomeClasses.ClassC;
-import org.junit.Test;
 
 public class ClassBTest {
+
     @Test
-    public void testMethodBWithException() {
+    public void testMethodBWithException() throws Exception {
         ClassC mockClassC = mock(ClassC.class);
 
-        try {
-            when(mockClassC.methodC()).thenThrow(new Exception("Exception in methodC"));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        when(mockClassC.methodC()).thenThrow(new Exception("Exception in methodC"));
 
         ClassB classB = new ClassB(mockClassC);
 
-        try {
-            classB.methodB();
-            fail("Expected exception was not thrown");
-        } catch (Exception e) {
-            assertEquals("Exception in methodC", e.getMessage());
-        }
+        Exception exception = assertThrows(Exception.class, classB::methodB, "Expected exception was not thrown");
 
-        try {
-            verify(mockClassC, times(1)).methodC();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        assertEquals("Exception in methodC", exception.getMessage());
+
+        verify(mockClassC, times(1)).methodC();
     }
 }
+
+
