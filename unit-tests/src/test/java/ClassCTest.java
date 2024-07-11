@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class ClassCTest {
     @Test
-    public void testMethodC() throws Exception {
+    public void testMethodC() {
         ClassC classC = new ClassC();
 
         String result = classC.avgMethodC();
