@@ -24,3 +24,19 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+unit-tests/src/main/resources/archetype-resources/src/main/java/App.java
+unit-tests/src/main/resources/archetype-resources/pom.xml
+unit-tests/src/main/resources/archetype-resources/src/test/java/AppTest.java
+unit-tests/src/main/resources/META-INF/maven/archetype.xml
+*.xml
+annotations/src/main/resources/archetype-resources/src/main/java/App.java
+annotations/src/main/resources/archetype-resources/src/test/java/AppTest.java
+annotations/target/classes/archetype-resources/src/main/java/App.java
+reflection/src/main/java/InstanceCreator.java
+annotations/target/classes/archetype-resources/src/test/java/AppTest.java
+reflection/src/main/resources/archetype-resources/src/main/java/App.java
+reflection/src/main/resources/archetype-resources/src/test/java/AppTest.java
+streams/src/main/resources/archetype-resources/src/main/java/App.java
+streams/src/main/resources/archetype-resources/src/test/java/AppTest.java
+streams/target/classes/archetype-resources/src/main/java/App.java
+streams/target/classes/archetype-resources/src/test/java/AppTest.java
